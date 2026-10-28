@@ -41,7 +41,7 @@ function searchTitles()
         return;
     }
 
-    const type = typeSelect.value;   // "tv" or "movie"
+    const type = typeSelect.value;  
     const url = base + "/search/" + type + "?api_key=" + APIKEY + "&query=" + encodeURIComponent(q);
     message.textContent = "Searching…";
     getJSON(url, function (data) {
